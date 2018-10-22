@@ -1,0 +1,31 @@
+user_input = raw_input("Put in any number: ")
+print "Choose your input method"
+
+method = raw_input("What is your method of Calculation? ")
+secondary_input = raw_input("Put in another number: ")
+
+#attempting to do a calculator type app. 
+#hopefully if you can input a specific type of method(just wat ima call it)
+#then they can completely customize their equation, and make this work
+
+final = float(user_input) + float(secondary_input)
+final2 = float(user_input) - float(secondary_input)
+final3 = float(user_input) * float(secondary_input)
+final4 = float(user_input) / float(secondary_input)
+
+output = str(final)
+output1 = str(final2)
+output2 = str(final3)
+output3 = str(final4)
+
+if method == "addition":
+	print output
+
+if method == "subtraction":
+	print output1
+	
+if method == "multiplication":
+	print output2
+	
+if method == "division":
+	print output3
